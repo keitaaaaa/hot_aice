@@ -17,5 +17,4 @@
     <?php endforeach; ?>
 </table>
 <?php echo $this->Html->link('新規追加',
->>>>>>> hot_aice
 array('action' => 'add')); ?>
