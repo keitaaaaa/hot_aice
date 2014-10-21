@@ -48,7 +48,7 @@ class PostsController extends AppController {
 			}
 			$this->Session->setFlash(__('Unable to update your post.'));
 		}
-		
+
 		if (!$this->request->data) {
 			$this->request->data = $post;
 		}
