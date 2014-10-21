@@ -16,3 +16,5 @@
     <?php endforeach; ?>
     <?php unset($post); ?>
 </table>
+<?php echo $this->Html->link('Add Post',
+array('controller' => 'posts', 'action' => 'add')); ?>
