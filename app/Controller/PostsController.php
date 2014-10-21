@@ -26,6 +26,7 @@ class PostsController extends AppController {
 				return $this->redirect(array('action' => 'index'));
 			}
 			$this->Session->setFlash(__('Unable to add your post.'));
+			return $this->redirect(array('action' => 'index'));
 		}
 	}
 
@@ -48,9 +49,20 @@ class PostsController extends AppController {
 			}
 			$this->Session->setFlash(__('Unable to update your post.'));
 		}
-
+		
 		if (!$this->request->data) {
 			$this->request->data = $post;
 		}
 	}
+
+	public function delete($id) {
+    	if ($this->request->is('get')) {
+        	throw new MethodNotAllowedException();
+    	}
+
+    	if ($this->Post->delete($id)) {
+        	$this->Session->setFlash(__('The post with id: %s has been deleted.', h($id)));
+        	return $this->redirect(array('action' => 'index'));
+    	}
+    }
 }
