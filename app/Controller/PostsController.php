@@ -19,4 +19,14 @@ class PostsController extends AppController {
 			}
 		}
 	}
+
+	public function edit($id) {
+		$post = $this->Post->findById($id);
+		if($this->request->is(array('post', 'put'))) {
+			$this->Post->id = $id;
+			if($this->Post->save($this->request->data)) {
+				return $this->redirect(array('action' => 'index'));
+			}
+		}
+	}
 }
