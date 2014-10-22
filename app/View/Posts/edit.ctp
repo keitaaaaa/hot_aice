@@ -6,5 +6,3 @@
 	echo $this->Form->input('id', array('type' => 'hidden'));
 	echo $this->Form->end('Save Post');
 ?>
-<?php echo $this->Html->link('戻る',
-array('action' => 'index')); ?>

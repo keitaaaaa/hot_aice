@@ -28,7 +28,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('test');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -40,8 +40,19 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<div id="header">
 			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
 		</div>
+		<div id="navi">
+			<p><?php echo $this->Html->link('Top',
+			array('controller' => 'apples', 'action' => 'index')); ?></p>
+			<p><?php echo $this->Html->link('ブログ',
+			array('controller' => 'posts', 'action' => 'index')); ?></p>
+			<p><?php echo $this->Html->link('ディスコグラフィー',
+			array('controller' => 'musics', 'action' => 'index')); ?></p>
+			<p><?php echo $this->Html->link('ギャラリー',
+			array('controller' => 'galleries', 'action' => 'index')); ?></p>
+			<p><?php echo $this->Html->link('ライブ',
+			array('controller' => '', 'action' => '')); ?></p>
+		</div>
 		<div id="content">
-
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>

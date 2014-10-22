@@ -1,4 +1,5 @@
-<h1>ブログ！！</h1>
+<h1>ブログ</h1>
+
 <table>
     <tr>
         <th>id</th>
@@ -9,7 +10,7 @@
 
     <?php foreach ($posts as $post): ?>
         <tr>
-            <td><?php echo $post['Post']['id']; ?>
+            <td><?php echo $post['Post']['id']; ?></td>
             <td><?php echo $this->Html->link($post['Post']['title'],
                 array('action' => 'view', $post['Post']['id'])); ?></td>
             <td><?php echo $post['Post']['created']; ?></td>
@@ -20,7 +21,9 @@
                 array('confirm' => '削除してよろしいですか？')); ?>
             </td>
         </tr>
+
     <?php endforeach; ?>
 </table>
+
 <?php echo $this->Html->link('新しい記事',
 array('action' => 'add')); ?>
