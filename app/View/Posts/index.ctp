@@ -1,8 +1,9 @@
 <?php $this->Html->css('/css/music.css', NULL, array('inline' => false)); ?>
 <div id="page_title">
     <h1><?php echo $this->Html->image('title_blog.png',
-                array('width' => '320')); ?></h1>
+                array('width' => '165')); ?></h1>
 </div>
+<div id='big'>
 <table>
     <tr>
         <th>タイトル</th>
@@ -35,3 +36,5 @@
 
 <?php echo $this->Html->link('新しい記事',
 array('action' => 'add')); ?>
+
+</div>

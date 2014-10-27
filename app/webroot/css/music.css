@@ -1,8 +1,9 @@
 #page_title {
 	margin-top: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	text-align: right;
 }
+
 #img {
 	clear: both;
 	float: left;
@@ -18,8 +19,7 @@
 }
 #movie {
 	float: center;
-	width: 80%;
-	text-align: right;
+	text-align: center;
 	font-size: 120%;
 }
 #box {
