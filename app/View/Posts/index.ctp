@@ -1,8 +1,10 @@
-<h1>ブログ</h1>
-
+<?php $this->Html->css('/css/music.css', NULL, array('inline' => false)); ?>
+<div id="page_title">
+    <h1><?php echo $this->Html->image('title_blog.png',
+                array('width' => '320')); ?></h1>
+</div>
 <table>
     <tr>
-        <th>id</th>
         <th>タイトル</th>
         <th>作成日</th>
         <th>アクション</th>
@@ -10,11 +12,17 @@
 
     <?php foreach ($posts as $post): ?>
         <tr>
-            <td><?php echo $post['Post']['id']; ?></td>
-            <td><?php echo $this->Html->link($post['Post']['title'],
-                array('action' => 'view', $post['Post']['id'])); ?></td>
-            <td><?php echo $post['Post']['created']; ?></td>
-            <td><?php echo $this->Html->link('編集',
+            <td>
+                <?php echo $post['Post']['created']; ?>
+            </td>
+
+            <td>
+                <?php echo $this->Html->link($post['Post']['title'],
+                array('action' => 'view', $post['Post']['id'])); ?>
+            </td>
+
+            <td>
+                <?php echo $this->Html->link('編集',
                 array('action' => 'edit', $post['Post']['id'])); ?>
                 <?php echo $this->Form->postlink('削除',
                 array('action' => 'delete', $post['Post']['id']),

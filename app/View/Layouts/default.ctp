@@ -37,38 +37,43 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 </head>
 <body>
 	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
-		<div id="navi">
-			<p><?php echo $this->Html->link('Top',
-			array('controller' => 'apples', 'action' => 'index')); ?></p>
-			<p><?php echo $this->Html->link('ブログ',
-			array('controller' => 'posts', 'action' => 'index')); ?></p>
-			<p><?php echo $this->Html->link('ディスコグラフィー',
-			array('controller' => 'musics', 'action' => 'index')); ?></p>
-			<p><?php echo $this->Html->link('ギャラリー',
-			array('controller' => 'galleries', 'action' => 'index')); ?></p>
-			<p><?php echo $this->Html->link('ライブ',
-			array('controller' => '', 'action' => '')); ?></p>
+
+		<div id="left">
+			<div id="logo">
+					<?php echo $this->Html->image('logo_top.png',
+						array('width' => '220',
+								'url' => array('controller' => 'apples',
+												'action' => 'index'))); ?>
+			</div>
+
+			<div id="navi">
+				<p><?php echo $this->Html->image('top.png',
+				array('width' => '220',
+					'url' => array('controller' => 'apples',
+									'action' => 'index'))); ?></p>
+				<p><?php echo $this->Html->image('blog.png',
+				array('width' => '220',
+					'url' => array('controller' => 'posts',
+									'action' => 'index'))); ?></p>
+				<p><?php echo $this->Html->image('cds.png',
+				array('width' => '220',
+					'url' => array('controller' => 'musics',
+									'action' => 'index'))); ?></p>
+				<p><?php echo $this->Html->image('gallery.png',
+				array('width' => '220',
+					'url' => array('controller' => 'galleries',
+									'action' => 'index'))); ?></p>
+<!-- 				<p><?php echo $this->Html->link('ライブ',
+				array('controller' => '', 'action' => '')); ?></p> -->
+			</div>
+
 		</div>
 		<div id="content">
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
-			?>
-			<p>
-				<?php echo $cakeVersion; ?>
-			</p>
-		</div>
+		
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>

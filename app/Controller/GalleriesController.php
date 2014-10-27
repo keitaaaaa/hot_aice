@@ -4,5 +4,6 @@ class GalleriesController extends AppController {
 	public $components = array('Session');
 
 	public function index() {
+		// $this->set('galleries', $this->Gallery->find('all'));
 	}
 }
