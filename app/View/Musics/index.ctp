@@ -10,7 +10,10 @@
 	<div id="list">
 		<h3>「オードブル」</h3>
 		<p>
-			2014/1/30 発売&nbsp;&nbsp;&nbsp;&nbsp;>>>>&nbsp;
+			2014/1/30 発売
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			>
 			<?php echo $this->Html->link('試聴',
 				array('action' => 'listen')); ?>
 		</p>
@@ -25,7 +28,7 @@
 
 	</div>
 
-	<br>
+	
 
 	<div id="img">
 		<?php echo $this->Html->image('full_moon.jpg', array('width' => '250')); ?>

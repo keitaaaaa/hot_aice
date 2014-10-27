@@ -3,13 +3,46 @@
 	<h1><?php echo $this->Html->image('title_top.png',
 				array('width' => '320')); ?></h1>
 </div>
-<p><?php echo $this->Html->link('Top',
-			array('controller' => 'apples', 'action' => 'index')); ?></p>
-			<p><?php echo $this->Html->link('ブログ',
-			array('controller' => 'posts', 'action' => 'index')); ?></p>
-			<p><?php echo $this->Html->link('ディスコグラフィー',
-			array('controller' => 'musics', 'action' => 'index')); ?></p>
-			<p><?php echo $this->Html->link('ギャラリー',
-			array('controller' => 'galleries', 'action' => 'index')); ?></p>
-			<p><?php echo $this->Html->link('ライブ',
-			array('controller' => '', 'action' => '')); ?></p>
+
+<!-- <p>
+	<?php echo $this->Html->image('image_top.png',
+	array('width' => '800')); ?>
+</p> -->
+
+
+<div id='box'>
+	<div id='box_img'>
+		<?php echo $this->Html->image('image_top.png',
+		array('width' => '250')); ?>
+	</div>
+	<div id='box_m'>
+	<?php echo $this->Html->image('blog.png',
+				array('width' => '270',
+					'url' => array('controller' => 'posts',
+									'action' => 'index'))); ?>
+									</div>
+</div>
+<div id='box'>
+	<div id='box_img'>
+		<?php echo $this->Html->image('image_top.png',
+		array('width' => '250')); ?>
+	</div>
+	<div id='box_m'>
+	<?php echo $this->Html->image('cds.png',
+				array('width' => '270',
+					'url' => array('controller' => 'posts',
+									'action' => 'index'))); ?>
+									</div>
+</div>
+<div id='box'>
+	<div id='box_img'>
+		<?php echo $this->Html->image('image_top.png',
+		array('width' => '250')); ?>
+	</div>
+	<div id='box_m'>
+	<?php echo $this->Html->image('gallery.png',
+				array('width' => '270',
+					'url' => array('controller' => 'posts',
+									'action' => 'index'))); ?>
+									</div>
+</div>
