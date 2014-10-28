@@ -29,7 +29,7 @@
 		<div id='box_m'>
 		<?php echo $this->Html->image('cds.png',
 					array('width' => '250',
-						'url' => array('controller' => 'posts',
+						'url' => array('controller' => 'musics',
 										'action' => 'index'))); ?>
 										</div>
 	</div>
@@ -41,7 +41,7 @@
 		<div id='box_m'>
 		<?php echo $this->Html->image('gallery.png',
 					array('width' => '250',
-						'url' => array('controller' => 'posts',
+						'url' => array('controller' => 'galleries',
 										'action' => 'index'))); ?>
 										</div>
 	</div>
