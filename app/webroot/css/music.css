@@ -25,12 +25,15 @@
 #box {
 	float: left;
 	margin: 10px 5px;
-	width: 270px;
+	width: 250px;
 	height: 225px;
 }
 #box_img {
-	padding: 10px;
+
 }
 #box_m :hover{
 	opacity: 0.6;
+}
+#big {
+	float: center;
 }

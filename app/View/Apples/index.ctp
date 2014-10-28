@@ -4,46 +4,45 @@
 				array('width' => '123')); ?></h1>
 </div>
 <div id='big'>
-<!-- <p>
-	<?php echo $this->Html->image('image_top.png',
-	array('width' => '800')); ?>
-</p> -->
+	<!-- <p>
+		<?php echo $this->Html->image('image_top.png',
+		array('width' => '800')); ?>
+	</p> -->
 
-
-<div id='box'>
-	<div id='box_img'>
-		<?php echo $this->Html->image('image_top.png',
-		array('width' => '250')); ?>
+	<div id='box'>
+		<div id='box_img'>
+			<?php echo $this->Html->image('image_top.png',
+			array('width' => '250')); ?>
+		</div>
+		<div id='box_m'>
+		<?php echo $this->Html->image('blog.png',
+					array('width' => '250',
+						'url' => array('controller' => 'posts',
+										'action' => 'index'))); ?>
+										</div>
 	</div>
-	<div id='box_m'>
-	<?php echo $this->Html->image('blog.png',
-				array('width' => '270',
-					'url' => array('controller' => 'posts',
-									'action' => 'index'))); ?>
-									</div>
-</div>
-<div id='box'>
-	<div id='box_img'>
-		<?php echo $this->Html->image('image_top.png',
-		array('width' => '250')); ?>
+	<div id='box'>
+		<div id='box_img'>
+			<?php echo $this->Html->image('image_top.png',
+			array('width' => '250')); ?>
+		</div>
+		<div id='box_m'>
+		<?php echo $this->Html->image('cds.png',
+					array('width' => '250',
+						'url' => array('controller' => 'posts',
+										'action' => 'index'))); ?>
+										</div>
 	</div>
-	<div id='box_m'>
-	<?php echo $this->Html->image('cds.png',
-				array('width' => '270',
-					'url' => array('controller' => 'posts',
-									'action' => 'index'))); ?>
-									</div>
-</div>
-<div id='box'>
-	<div id='box_img'>
-		<?php echo $this->Html->image('image_top.png',
-		array('width' => '250')); ?>
+	<div id='box'>
+		<div id='box_img'>
+			<?php echo $this->Html->image('image_top.png',
+			array('width' => '250')); ?>
+		</div>
+		<div id='box_m'>
+		<?php echo $this->Html->image('gallery.png',
+					array('width' => '250',
+						'url' => array('controller' => 'posts',
+										'action' => 'index'))); ?>
+										</div>
 	</div>
-	<div id='box_m'>
-	<?php echo $this->Html->image('gallery.png',
-				array('width' => '270',
-					'url' => array('controller' => 'posts',
-									'action' => 'index'))); ?>
-									</div>
-</div>
 </div>
