@@ -51,10 +51,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				array('width' => '220',
 					'url' => array('controller' => 'apples',
 									'action' => 'index'))); ?></p>
-				<p><?php echo $this->Html->image('blog.png',
-				array('width' => '220',
-					'url' => array('controller' => 'posts',
-									'action' => 'index'))); ?></p>
 				<p><?php echo $this->Html->image('cds.png',
 				array('width' => '220',
 					'url' => array('controller' => 'musics',
@@ -63,8 +59,12 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				array('width' => '220',
 					'url' => array('controller' => 'galleries',
 									'action' => 'index'))); ?></p>
-<!-- 				<p><?php echo $this->Html->link('ライブ',
-				array('controller' => '', 'action' => '')); ?></p> -->
+				<!-- <p><?php echo $this->Html->link('ライブ',
+				array('controller' => '', 'action' => '')); ?></p>
+				<p><?php echo $this->Html->image('blog.png',
+				array('width' => '220',
+					'url' => array('controller' => 'posts',
+									'action' => 'index'))); ?></p> -->
 			</div>
 
 		</div>
