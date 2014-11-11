@@ -37,3 +37,8 @@
 #big {
 	float: center;
 }
+#T_img {
+	float: left;
+	width: 400px;
+	text-align: center;
+}

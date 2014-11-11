@@ -31,6 +31,16 @@
 					'action' => 'index'))); ?>
 		</div>
 	</div>
+	<div id='box'>
+		<div id='box_img'>
+			<?php echo $this->Html->image('image_top.png',
+			array('width' => '250')); ?>
+		</div>
+		<div id='box_m'>
+			<?php echo $this->Html->link('Tシャツ購入',
+			array('controller' => 'orders', 'action' => 'add')); ?>
+		</div>
+	</div>
 <!-- 	<div id='box'>
 		<div id='box_img'>
 				<?php echo $this->Html->image('image_top.png',
