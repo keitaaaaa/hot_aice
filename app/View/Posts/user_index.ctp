@@ -8,6 +8,7 @@
     <tr>
         <th>タイトル</th>
         <th>作成日</th>
+        <th>アクション</th>
     </tr>
 
     <?php foreach ($posts as $post): ?>
@@ -18,11 +19,20 @@
 
             <td>
                 <?php echo $this->Html->link($post['Post']['title'],
-                array('action' => 'view', $post['Post']['id'])); ?>
+                array('action' => 'user_view', $post['Post']['id'])); ?>
+            </td>
+
+            <td>
+                <?php echo $this->Html->link('編集',
+                array('action' => 'edit', $post['Post']['id'])); ?>
+                <?php echo $this->Form->postlink('削除',
+                array('action' => 'delete', $post['Post']['id']),
+                array('confirm' => '削除してよろしいですか？')); ?>
             </td>
         </tr>
 
     <?php endforeach; ?>
 </table>
-
+<?php echo $this->Html->link('新規投稿',
+array('action' => 'add')); ?>
 </div>

@@ -65,12 +65,14 @@
 class DATABASE_CONFIG {
 
 	public $default = array(
-		'datasource' => 'Database/Mysql',
+		'datasource' => 'Database/Postgres',
 		'persistent' => false,
 		'host' => 'localhost',
+		'port' => '5432',
 		'login' => 'root',
 		'password' => 'root',
 		'database' => 'hot_aice',
+		'schema' => 'public',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
@@ -79,10 +81,10 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'test_database_name',
+		'login' => 'root',
+		'password' => 'root',
+		'database' => 'hot_aice',
 		'prefix' => '',
-		//'encoding' => 'utf8',
+		'encoding' => 'utf8',
 	);
 }

@@ -20,6 +20,7 @@
 			array('width' => '250','url' => array('controller' => 'musics','action' => 'index'))); ?>
 		</div>
 	</div>
+
 	<div id='box'>
 		<div id='box_img'>
 			<?php echo $this->Html->image('image_top.png',
@@ -31,6 +32,19 @@
 					'action' => 'index'))); ?>
 		</div>
 	</div>
+	
+	<div id='box'>
+		<div id='box_img'>
+				<?php echo $this->Html->image('image_top.png',
+				array('width' => '250')); ?>
+			</div>
+			<div id='box_m'>
+				<?php echo $this->Html->image('blog.png',
+				array('width' => '250','url' => array('controller' => 'posts',
+					'action' => 'index'))); ?>
+			</div>
+	</div>
+	
 	<div id='box'>
 		<div id='box_img'>
 			<?php echo $this->Html->image('image_top.png',
@@ -41,15 +55,26 @@
 			array('controller' => 'orders', 'action' => 'add')); ?>
 		</div>
 	</div>
-<!-- 	<div id='box'>
+	
+	<div id='box'>
 		<div id='box_img'>
-				<?php echo $this->Html->image('image_top.png',
-				array('width' => '250')); ?>
-			</div>
-			<div id='box_m'>
-				<?php echo $this->Html->image('blog.png',
-				array('width' => '250','url' => array('controller' => 'posts',
-					'action' => 'index'))); ?>
-			</div>
-	</div> -->
-</div>
+			<?php echo $this->Html->image('image_top.png',
+			array('width' => '250')); ?>
+		</div>
+		<div id='box_m'>
+			<?php echo $this->Html->link('フォトギャラリー',
+			array('controller' => 'photos', 'action' => 'index')); ?>
+		</div>
+	</div>
+
+	<div id='box'>
+		<div id='box_img'>
+			<?php echo $this->Html->image('image_top.png',
+			array('width' => '250')); ?>
+		</div>
+		<div id='box_m'>
+			<?php echo $this->Html->link('メンバー専用',
+			array('controller' => 'users', 'action' => 'index')); ?>
+		</div>
+	</div>
+	

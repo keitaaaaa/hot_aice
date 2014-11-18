@@ -13,8 +13,8 @@
 
 <?php
 	echo $this->Form->create('Order');
-	echo $this->Form->radio('color', array('black' => 'black', 'white' => 'white'), array('legend' => '色を選択'));
-	echo $this->Form->radio('size', array('S' => 'S', 'M' => 'M', 'L' => 'L'), array('legend' => 'サイズを選択'));
+	echo $this->Form->radio('color', array('black' => 'black', 'white' => 'white'));
+	echo $this->Form->radio('size', array('S' => 'S', 'M' => 'M', 'L' => 'L'));
 	echo $this->Form->input('volume');
 	echo $this->Form->input('customer');
 	echo $this->Form->input('adress');

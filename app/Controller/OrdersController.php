@@ -38,7 +38,7 @@ class OrdersController extends AppController {
 			'size' => $new['Order']['size'],
 			'adress' => $new['Order']['adress'],
 			'volume' => $new['Order']['volume']);
-		$email->from( array('wkeitaorange@gmail.com' => 'Sender'));
+		$email->from(array('wkeitaorange@gmail.com' => 'Sender'));
 		$email->bcc($new['Order']['mail']);
 		$email->cc('wkeitaorange@gmail.com');
 		$email->subject('HOT AICE Tシャツ注文の件');
