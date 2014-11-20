@@ -65,14 +65,23 @@
 class DATABASE_CONFIG {
 
 	public $default = array(
-		'datasource' => 'Database/Postgres',
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'us-cdbr-iron-east-01.cleardb.net',
+		'login' => 'bb28bc6f2fb76d',
+		'password' => '2661337a',
+		'database' => 'heroku_6f26f840eb84380',
+		'prefix' => '',
+		'encoding' => 'utf8',
+	);
+
+	public $development = array(
+		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'port' => '5432',
 		'login' => 'root',
 		'password' => 'root',
 		'database' => 'hot_aice',
-		'schema' => 'public',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
