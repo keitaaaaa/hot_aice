@@ -86,14 +86,11 @@ class DATABASE_CONFIG {
 		'encoding' => 'utf8',
 	);
 
-	public $test = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'root',
-		'password' => 'root',
-		'database' => 'hot_aice',
-		'prefix' => '',
-		'encoding' => 'utf8',
-	);
+	public function __construct() {
+        if (env('SERVER_NAME') != 'localhost') {
+            $this->default = $this->default;
+        } else {
+            $this->default = $this->development;
+        }
+    }
 }

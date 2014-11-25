@@ -16,7 +16,7 @@ class PhotosController extends AppController {
 		if ($this->request->is('post')) {
 			$tmp = $this->request->data['Photo']['file']['tmp_name'];
 			if(is_uploaded_file($tmp)) {
-				$path = IMAGES;
+				$path = IMAGES.upload;
 				$file_name = basename($this->request->data['Photo']['file']['name']);
 				$file = $path.DS.$file_name;
 				if (move_uploaded_file($tmp, $file)) {

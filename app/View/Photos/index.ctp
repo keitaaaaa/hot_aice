@@ -5,7 +5,7 @@
 <h1>Photos</h1>
 <?php foreach($photos as $photo): ?>
 
-<a href="img/<?php echo $photo['Photo']['file_name']; ?>" rel="lightbox">
-<img src="img/<?php echo $photo['Photo']['file_name']; ?>" height="130"/></a>
+<a href="img/upload/<?php echo $photo['Photo']['file_name']; ?>" rel="lightbox">
+<img src="img/upload/<?php echo $photo['Photo']['file_name']; ?>" height="130"/></a>
 
 <?php endforeach; ?>

@@ -37,7 +37,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 </head>
 <body>
 	<div id="container">
-
+		
 		<div id="left">
 			<div id="logo">
 					<?php echo $this->Html->image('logo_top.png',
@@ -47,33 +47,35 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			</div>
 
 			<div id="navi">
-				<p><?php echo $this->Html->image('top.png',
-				array('width' => '220',
-					'url' => array('controller' => 'apples',
-									'action' => 'index'))); ?></p>
-				<p><?php echo $this->Html->image('cds.png',
-				array('width' => '220',
-					'url' => array('controller' => 'musics',
-									'action' => 'index'))); ?></p>
-				<p><?php echo $this->Html->image('gallery.png',
-				array('width' => '220',
-					'url' => array('controller' => 'galleries',
-									'action' => 'index'))); ?></p>
-				<!-- <p><?php echo $this->Html->link('ライブ',
-				array('controller' => '', 'action' => '')); ?></p>
-				<p><?php echo $this->Html->image('blog.png',
-				array('width' => '220',
-					'url' => array('controller' => 'posts',
-									'action' => 'index'))); ?></p> -->
-			</div>
+				<table>
+					<td><?php echo $this->Html->link('Discography',
+					array('controller' => 'musics',
+							'action' => 'index')); ?></td>
 
+					<td><?php echo $this->Html->link('Photos',
+					array('controller' => 'photos',
+							'action' => 'index')); ?></td>
+				</table>
+
+					<p><?php echo $this->Html->link('Movies',
+					array('controller' => 'galleries',
+							'action' => 'index')); ?></p>
+
+					<p><?php echo $this->Html->link('Blog',
+					array('controller' => 'posts',
+							'action' => 'index')); ?></p>
+
+					<p><?php echo $this->Html->link('Goods',
+					array('controller' => 'orders',
+							'action' => 'add')); ?></p>
+			</div>
 		</div>
+		
 		<div id="content">
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		
 	</div>
 </body>
 </html>
