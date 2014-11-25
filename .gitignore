@@ -57,3 +57,4 @@ Thumbs.db
 !/app/tmp/tests/empty
 
 /app/webroot/img/upload/*
+!/app/webroot/img/upload/
