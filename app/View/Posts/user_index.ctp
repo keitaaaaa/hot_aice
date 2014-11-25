@@ -6,9 +6,9 @@
 <div id='big'>
 <table>
     <tr>
-        <th>タイトル</th>
-        <th>作成日</th>
-        <th>アクション</th>
+        <th>date</th>
+        <th>title</th>
+        <th>actions</th>
     </tr>
 
     <?php foreach ($posts as $post): ?>

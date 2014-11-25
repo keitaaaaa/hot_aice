@@ -17,11 +17,25 @@
 	text-align: left;
 	font-size: 120%;
 }
-#movie {
+
+#big {
+	clear: both;
 	float: center;
 	text-align: center;
-	font-size: 120%;
 }
+
+#movie {
+	float: left;
+	text-align: center;
+	font-size: 120%;
+	margin: 20px 10px;
+}
+
+#photo {
+	
+	margin: 20px;
+}
+
 #box {
 	float: left;
 	margin: 10px 5px;
@@ -29,14 +43,12 @@
 	height: 225px;
 }
 #box_img {
-
 }
+
 #box_m :hover{
 	opacity: 0.6;
 }
-#big {
-	float: center;
-}
+
 #T_img {
 	float: left;
 	width: 400px;

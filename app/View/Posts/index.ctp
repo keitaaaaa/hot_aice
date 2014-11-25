@@ -6,8 +6,8 @@
 <div id='big'>
 <table>
     <tr>
-        <th>タイトル</th>
-        <th>作成日</th>
+        <th>date</th>
+        <th>title</th>
     </tr>
 
     <?php foreach ($posts as $post): ?>

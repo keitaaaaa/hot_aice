@@ -47,24 +47,22 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			</div>
 
 			<div id="navi">
-				<p><?php echo $this->Html->image('top.png',
-					array('width' => '220',
-						'url' => array('controller' => 'apples',
-						'action' => 'index'))); ?></p>
 				<p><?php echo $this->Html->image('cds.png',
 					array('width' => '220',
 						'url' => array('controller' => 'musics',
 						'action' => 'index'))); ?></p>
 				<p><?php echo $this->Html->image('gallery.png',
 					array('width' => '220',
-						'url' => array('controller' => 'galleries',
+						'url' => array('controller' => 'photos',
 						'action' => 'index'))); ?></p>
-				<p><?php echo $this->Html->link('Blog',
-					array('controller' => 'posts',
-							'action' => 'index')); ?></p>
-				<p><?php echo $this->Html->link('Goods',
-					array('controller' => 'orders',
-							'action' => 'add')); ?></p>
+				<p><?php echo $this->Html->image('blog.png',
+					array('width' => '220',
+						'url' => array('controller' => 'posts',
+						'action' => 'index'))); ?></p>
+				<p><?php echo $this->Html->image('goods.png',
+					array('width' => '220',
+						'url' => array('controller' => 'orders',
+						'action' => 'add'))); ?></p>
 			</div>
 		</div>
 		
