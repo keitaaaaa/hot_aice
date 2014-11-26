@@ -21,10 +21,8 @@ class OrdersController extends AppController {
 
 		$this->Order->create();
 			if($this->Order->save($this->request->data)) {
-				$this->Session->setFlash(__('ご注文ありがとうございました。メールをお送りするのでご確認ください。'));
 				return $this->redirect(array('action' => 'finish'));
 			}
-			$this->Session->setFlash(__('Unable to add your post.'));
 			return $this->redirect(array('action' => 'add'));
 		}
 	}

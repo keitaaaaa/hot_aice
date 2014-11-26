@@ -1,2 +1,7 @@
-<h1>購入情報入力</h1>
-ご注文ありがとうございました。メールをお送りするのでご確認ください。
+<?php $this->Html->css('/css/music.css', NULL, array('inline' => false)); ?>
+<div id="page_title">
+	<h1><?php echo $this->Html->image('title_goods.png',
+				array('width' => '230')); ?></h1>
+</div>
+<h1>注文が完了しました！</h1>
+ありがとうございます。メールをお送りするのでご確認ください。
