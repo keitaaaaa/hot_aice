@@ -3,6 +3,8 @@
 	<h1><?php echo $this->Html->image('title_goods.png',
 				array('width' => '230')); ?></h1>
 </div>
+商品名：HOT AICE Tシャツ
+<br>
 カラー：
 <?php echo $this->request->data['Order']['color']; ?>
 <br>

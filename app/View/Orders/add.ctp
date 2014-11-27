@@ -3,6 +3,8 @@
 	<h1><?php echo $this->Html->image('title_goods.png',
 				array('width' => '230')); ?></h1>
 </div>
+<h1>&nbsp;&nbsp;HOT AICE Tシャツ</h1>
+<br>
 <div id='T_img'>
 	<?php echo $this->Html->image('T1.jpg', array('width' => '300', 'height' => '350')); ?>
 	<p>Black 2500円</p>

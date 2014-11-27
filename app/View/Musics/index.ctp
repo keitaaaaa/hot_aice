@@ -5,7 +5,7 @@
 </div>
 <div id='big'>
 	<div id="img">
-		<?php echo $this->Html->image('odobull.png', array('width' => '250')); ?>
+		<?php echo $this->Html->image('odobull.png', array('width' => '220')); ?>
 	</div>
 
 	<div id="list">
@@ -29,10 +29,10 @@
 
 	</div>
 
-	
+	<br><br><br>
 
 	<div id="img">
-		<?php echo $this->Html->image('full_moon.jpg', array('width' => '250')); ?>
+		<?php echo $this->Html->image('full_moon.jpg', array('width' => '220')); ?>
 	</div>
 	<div id="list">
 		<h3>「フルムーン/ハローハロー」</h3>
