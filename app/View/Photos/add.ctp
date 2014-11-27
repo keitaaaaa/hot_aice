@@ -14,9 +14,27 @@
 <div id='big'>
 	<h1>Photos</h1>
 	<div id='photo'>
-		<link rel="stylesheet" href="/hot_aice/css/lightbox.css" type="text/css" media="screen" />  
-		<script src="/hot_aice/js/jquery-1.11.0.min.js" type="text/javascript"></script>  
-		<script src="/hot_aice/js/lightbox.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="<?php
+		if (env('SERVER_NAME') == 'localhost') {
+			echo '/hot_aice/';
+		} else {
+			echo '/';
+		}
+		?>/css/lightbox.css" type="text/css" media="screen" />  
+		<script src="<?php
+		if (env('SERVER_NAME') == 'localhost') {
+			echo '/hot_aice/';
+		} else {
+			echo '/';
+		}
+		?>js/jquery-1.11.0.min.js" type="text/javascript"></script>  
+		<script src="<?php
+		if (env('SERVER_NAME') == 'localhost') {
+			echo '/hot_aice/';
+		} else {
+			echo '/';
+		}
+		?>js/lightbox.js" type="text/javascript"></script>
 
 		<?php foreach($photos as $photo): ?>
 
