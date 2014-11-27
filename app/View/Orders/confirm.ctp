@@ -13,8 +13,8 @@
 <br>
 数量：
 <?php echo $this->request->data['Order']['volume']; ?>
-<br>
-名前：
+<br><br>
+氏名：
 <?php echo $this->request->data['Order']['customer']; ?>
 <br>
 住所：

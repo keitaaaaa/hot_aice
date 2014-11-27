@@ -7,5 +7,3 @@
     ?>
     </fieldset>
 <?php echo $this->Form->end(__('Login')); ?>
-
-<?php echo $this->Html->link('新規登録', array('action' => 'add')); ?>

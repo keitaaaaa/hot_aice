@@ -27,7 +27,7 @@
 				'Lサイズ' => 'Lサイズ')));
 
 	echo $this->Form->input('volume',
-		array('label' => '枚数', 'options' => array(1, 2, 3, 4, 5)));
+		array('label' => '枚数', 'options' => array(1 => 1, 2 => 2, 3 => 3, 4 => 4, 5 => 5)));
 	
 	echo $this->Form->input('customer', array('label' => '氏名'));
 	
