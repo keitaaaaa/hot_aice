@@ -21,7 +21,7 @@
 		} else {
 			echo '/';
 		}
-		?>/css/lightbox.css" type="text/css" media="screen" />  
+		?>css/lightbox.css" type="text/css" media="screen" />  
 		<script src="<?php
 		if (env('SERVER_NAME') == 'localhost') {
 			echo '/hot_aice/';
