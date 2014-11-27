@@ -34,3 +34,4 @@ class PhotosController extends AppController {
 	}
 }
 
+
