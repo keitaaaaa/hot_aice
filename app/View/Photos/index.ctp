@@ -5,8 +5,9 @@
 </div>
 
 <div id='big'>
-
 	<h1>Movies</h1>
+</div>
+<div id='big2'>
 	<div id="movie">
 			<p>
 				<!-- 16:9 -->

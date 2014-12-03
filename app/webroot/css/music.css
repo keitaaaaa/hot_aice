@@ -24,6 +24,13 @@
 	text-align: center;
 }
 
+#big2 {
+	margin-left: 2%;
+	clear: both;
+	float: center;
+	text-align: center;
+}
+
 #movie {
 	float: left;
 	text-align: center;

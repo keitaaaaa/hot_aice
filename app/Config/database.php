@@ -67,10 +67,10 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'us-cdbr-iron-east-01.cleardb.net',
-		'login' => 'bb28bc6f2fb76d',
-		'password' => '2661337a',
-		'database' => 'heroku_6f26f840eb84380',
+		'host' => 'mysql009.phy.lolipop.lan',
+		'login' => 'LAA0564038',
+		'password' => 'shinod',
+		'database' => 'LAA0564038-hotaiceweb',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
@@ -87,10 +87,10 @@ class DATABASE_CONFIG {
 	);
 
 	public function __construct() {
-        if (env('SERVER_NAME') != 'localhost') {
-            $this->default = $this->default;
-        } else {
-            $this->default = $this->development;
-        }
-    }
+		if (env('SERVER_NAME') != 'localhost') {
+			$this->default = $this->default;
+		} else {
+			$this->default = $this->development;
+		}
+	}
 }
