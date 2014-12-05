@@ -21,6 +21,15 @@ class OrdersController extends AppController {
 
 		$this->Order->create();
 			if($this->Order->save($this->request->data)) {
+				$email = new CakeEmail('gmail');
+				$arrVal = $this->request->data;
+				$email->from(array('wkeitaorange@gmail.com' => 'HOT AICE.com'));
+				$email->cc('wkeitaorange@gmail.com');
+				$email->subject('HOT AICE Tシャツ注文を承りました');
+				$email->emailFormat('text');
+				$email->template('default');
+				$email->viewVars(compact('arrVal'));
+				$email->send();
 				return $this->redirect(array('action' => 'finish'));
 			}
 			return $this->redirect(array('action' => 'add'));
@@ -28,18 +37,5 @@ class OrdersController extends AppController {
 	}
 
 	public function finish() {
-		$new = $this->Order->find('first');//newに最新のorderを格納
-		$email = new CakeEmail('gmail');
-		$arrVal = array(
-			'customer' => $new['Order']['customer'],
-			'color' => $new['Order']['color'],
-			'size' => $new['Order']['size'],
-			'adress' => $new['Order']['adress'],
-			'volume' => $new['Order']['volume']);
-		$email->from(array('wkeitaorange@gmail.com' => 'Sender'));
-		$email->bcc($new['Order']['mail']);
-		$email->cc('wkeitaorange@gmail.com');
-		$email->subject('HOT AICE Tシャツ注文の件');
-		$email->send('メール本文');
 	}
 }

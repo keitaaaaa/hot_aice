@@ -14,4 +14,19 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 ?>
-<?php echo $content; ?>
+<?php printf("氏名：%s\n", $arrVal['Order']['customer']); ?>
+
+<?php printf("住所：%s\n", $arrVal['Order']['adress']); ?>
+
+<?php printf("メールアドレス：%s\n", $arrVal['Order']['mail']); ?>
+
+<?php printf("色：%s\n", $arrVal['Order']['color']); ?>
+
+<?php printf("サイズ：%s\n", $arrVal['Order']['size']); ?>
+
+<?php printf("個数：%s\n", $arrVal['Order']['volume']); ?>
+
+<?php
+	$money = $arrVal['Order']['volume'] * 2500;
+	printf("合計：%d円\n", $money);
+?>

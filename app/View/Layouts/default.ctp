@@ -42,7 +42,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<div id="logo">
 					<?php echo $this->Html->image('logo_top.png',
 						array('width' => '220',
-								'url' => array('controller' => 'apples',
+								'url' => array('controller' => 'contents',
 												'action' => 'index'))); ?>
 			</div>
 
