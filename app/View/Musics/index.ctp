@@ -5,11 +5,11 @@
 </div>
 <div id='big'>
 	<div id="img">
-		<?php echo $this->Html->image('odobull.png', array('width' => '220')); ?>
+		<?php echo $this->Html->image('odobull.png', array('width' => '220', 'url' => array('action' => 'listen'))); ?>
 	</div>
 
 	<div id="list">
-		<h3>「オードブル」</h3>
+		<h3>オードブル</h3>
 		<p>
 			2014/1/30 発売
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -26,16 +26,16 @@
 			4.夏の残像<br>
 			5.ただいま、おかえり<br>
 		</p>
-
 	</div>
+</div>
 
 	<br><br><br>
-
+<div id='big'>
 	<div id="img">
 		<?php echo $this->Html->image('full_moon.jpg', array('width' => '220')); ?>
 	</div>
 	<div id="list">
-		<h3>「フルムーン/ハローハロー」</h3>
+		<h3>フルムーン/ハローハロー</h3>
 			<p>2012/10/20 発売</p>	
 		<p>
 			1.フルムーン<br>

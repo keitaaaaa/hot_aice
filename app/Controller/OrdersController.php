@@ -8,8 +8,12 @@ class OrdersController extends AppController {
 
 	public function add() {
 		if($this->request->is('post')) {
-			$this->set('order', $this->request->data);
-			$this->render('confirm');
+			if($this->request->data['Order']['customer'] != null
+				and $this->request->data['Order']['adress'] != null
+				and $this->request->data['Order']['mail'] != null) {
+				$this->set('order', $this->request->data);
+				$this->render('confirm');
+			}
 		}
 	}
 

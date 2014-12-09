@@ -61,7 +61,7 @@ h2 {
 }
 h3 {
 	color: #2c6877;
-	font-size: 165%;
+	font-size: 140%;
 }
 h4 {
 	color: #993;
@@ -77,31 +77,11 @@ p {
 /** Layout **/
 #container {
 	text-align: left;
-	margin-right: 10%;
-	margin-left: 10%;
-	height: 100%;
+	margin-right: 6%;
+	margin-left: 6%;
+	height: 90%;
 }
 
-#header{
-	padding: 10px 20px;
-}
-#header h1 {
-	line-height:20px;
-	background: #003d4c url('../img/cake.icon.png') no-repeat left;
-	color: #fff;
-	padding: 0px 30px;
-}
-#header h1 a {
-	color: #fff;
-	background: #003d4c;
-	font-weight: normal;
-	text-decoration: none;
-}
-#header h1 a:hover {
-	color: #fff;
-	background: #003d4c;
-	text-decoration: underline;
-}
 #left{
 	background: red;
 	float: left;
@@ -124,17 +104,10 @@ p {
 }
 #content{
 	background: #fff;
-	margin-left: 220px;
+	margin-left: 2%;
 	color: #333;
-	padding: 30px 0px 0px 20px;
+	padding: 30px 0 0 0;
 	overflow: auto;
-}
-#footer {
-	clear: both;
-	padding: 6px 10px;
-}
-#header a, #footer a {
-	color: #fff;
 }
 #cake-powered {
 	float: right;
@@ -171,9 +144,9 @@ table {
 th {
 	border:0;
 	border-bottom:2px solid #555;
-	text-align: left;
+	text-align: right;
 	padding:4px;
-	width: 10%;
+	width: 150px;
 }
 th a {
 	display: block;

@@ -3,7 +3,7 @@
 	<h1><?php echo $this->Html->image('title_top.png',
 				array('width' => '123')); ?></h1>
 </div>
-<div id='big'>		
+<div id='big3'>		
 	</div>
 	<div id='box'>
 		<div id='box_img'>
@@ -52,14 +52,4 @@
 		</div>
 	</div>
 
-	<div id='box'>
-		<div id='box_img'>
-			<?php echo $this->Html->image('top3.jpg',
-			array('width' => '250')); ?>
-		</div>
-		<div id='box_m'>
-			<?php echo $this->Html->link('メンバー専用',
-			array('controller' => 'users', 'action' => 'index')); ?>
-		</div>
-	</div>
 	

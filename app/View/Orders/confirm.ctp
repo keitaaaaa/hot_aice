@@ -3,25 +3,42 @@
 	<h1><?php echo $this->Html->image('title_goods.png',
 				array('width' => '230')); ?></h1>
 </div>
-商品名：HOT AICE Tシャツ
-<br>
-カラー：
-<?php echo $this->request->data['Order']['color']; ?>
-<br>
-サイズ：
-<?php echo $this->request->data['Order']['size']; ?>
-<br>
-数量：
-<?php echo $this->request->data['Order']['volume']; ?>
-<br><br>
-氏名：
-<?php echo $this->request->data['Order']['customer']; ?>
-<br>
-住所：
-<?php echo $this->request->data['Order']['adress']; ?>
-<br>
-メールアドレス：
-<?php echo $this->request->data['Order']['mail']; ?>
+
+<div id='confirm'>
+	<table>
+		<tr>
+			<th>商品名</th>
+			<td>HOT AICE Tシャツ</td>
+		</tr>
+		<tr>
+			<th>カラー</th>
+			<td><?php echo $this->request->data['Order']['color']; ?></td>
+		</tr>
+		<tr>
+			<th>サイズ</th>
+			<td><?php echo $this->request->data['Order']['size']; ?></td>
+		</tr>
+		<tr>
+			<th>数量</th>
+			<td><?php echo $this->request->data['Order']['volume']; ?></td>
+		</tr>
+		<tr>
+			<th>氏名</th>
+			<td><?php echo $this->request->data['Order']['customer']; ?></td>
+		</tr>
+		<tr>
+			<th>住所</th>
+			<td><?php echo $this->request->data['Order']['adress']; ?></td>
+		</tr>
+		<tr>
+			<th>メールアドレス</th>
+			<td><?php echo $this->request->data['Order']['mail']; ?></td>
+		</tr>
+	</table>
+</div>
+
+
+
 <br>
 <?php
 	echo $this->Form->create('Order', array('action' => 'save'));

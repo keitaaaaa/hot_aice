@@ -7,7 +7,7 @@
 #img {
 	clear: both;
 	float: left;
-	margin-left: 10%;
+	margin-left: 4%;
 	text-align: right;
 }
 #list {
@@ -24,32 +24,26 @@
 	text-align: center;
 }
 
-#big2 {
-	margin-left: 2%;
-	clear: both;
-	float: center;
-	text-align: center;
-}
-
 #movie {
-	float: left;
+	float: center;
 	text-align: center;
 	font-size: 120%;
 	margin: 20px 10px;
 }
 
 #photo {
-	
 	margin: 20px;
 }
 
 #box {
 	float: left;
-	margin: 10px 5px;
-	width: 250px;
+	margin: 10px 0px 10px 12%;
+	width: 240px;
 	height: 225px;
 }
 #box_img {
+	clear: both;
+	float: left;
 }
 
 #box_m :hover{
@@ -58,10 +52,23 @@
 
 #T_img {
 	float: left;
-	width: 400px;
+	width: 40%;
 	text-align: center;
 }
 
-#color_size {
+#form {
+	float: left;
+	width: 50%;
 }
 
+.tugie {
+	text-align: right;
+}
+
+#big3 {
+	margin-left: 10%;
+	text-align: center;
+}
+#confirm {
+	width: 70%;
+}

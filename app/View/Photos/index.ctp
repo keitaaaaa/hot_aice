@@ -6,18 +6,15 @@
 
 <div id='big'>
 	<h1>Movies</h1>
-</div>
-<div id='big2'>
 	<div id="movie">
 			<p>
 				<!-- 16:9 -->
-				<iframe width="384" height="216" src="//www.youtube.com/embed/qDNxAefJ430?rel=0" frameborder="0" allowfullscreen></iframe>
+				<iframe width="480" height="270" src="//www.youtube.com/embed/qDNxAefJ430?rel=0" frameborder="0" allowfullscreen></iframe>
 			</p>
-			<br>
 	</div>
 	<div id="movie">
 			<p>
-				<iframe width="384" height="216" src="//www.youtube.com/embed/IW4ya9gVRSA?rel=0" frameborder="0" allowfullscreen></iframe>
+				<iframe width="480" height="270" src="//www.youtube.com/embed/IW4ya9gVRSA?rel=0" frameborder="0" allowfullscreen></iframe>
 			</p>
 	</div>
 				<br>
